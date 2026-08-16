@@ -6,7 +6,7 @@ on:
     paths: [ 'terraform/**' ]
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: sa-east-1
   TF_VERSION: 1.6.0
   WORKING_DIR: terraform/environments/development
 
@@ -29,7 +29,6 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ${{ env.AWS_REGION }}
       
       - name: 🎯 Format Check
