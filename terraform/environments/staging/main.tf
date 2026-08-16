@@ -16,9 +16,9 @@ terraform {
   # Backend S3 para armazenar o state remotamente
   # IMPORTANTE: Criar bucket antes de usar
   backend "s3" {
-    bucket         = "fiap-terraform-state-staging"  # Bucket S3 para state
+    bucket         = "fiap-terraform-state-staging-497172038820"  # Bucket S3 para state
     key            = "staging/terraform.tfstate"     # Caminho do arquivo state
-    region         = "us-east-1"                     # Região AWS
+    region         = "sa-east-1"                     # Região AWS
     encrypt        = true                            # Criptografar state
   }
 }
