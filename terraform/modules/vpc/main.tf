@@ -151,3 +151,4 @@ resource "aws_route_table_association" "private" {
   subnet_id      = aws_subnet.private[count.index].id
   route_table_id = aws_route_table.private[var.enable_nat_gateway ? count.index % var.nat_gateway_count : 0].id
 }
+# Teste Módulos Sun Aug 16 04:20:17 PM UTC 2026

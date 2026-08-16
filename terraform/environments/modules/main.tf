@@ -12,9 +12,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "fiap-terraform-state-modules"
+    bucket  = "fiap-terraform-state-modules-497172038820"
     key     = "modules/terraform.tfstate"
-    region  = "us-east-1"
+    region  = "sa-east-1"
     encrypt = true
   }
 }
@@ -23,7 +23,7 @@ terraform {
 # PROVIDER
 # ============================================
 provider "aws" {
-  region = "us-east-1"
+  region = "sa-east-1"
 
   default_tags {
     tags = {
