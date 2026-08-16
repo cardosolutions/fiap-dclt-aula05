@@ -7,7 +7,7 @@
 variable "aws_region" {
   description = "AWS region" # Região AWS
   type        = string       # Tipo: string
-  default     = "us-east-1"  # Valor padrão: N. Virginia
+  default     = "sa-east-1"  # Valor padrão: N. Virginia
 }
 
 # Nome do projeto (usado em tags e nomes de recursos)
